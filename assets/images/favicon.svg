@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
+  <!-- Background circle -->
+  <circle cx="32" cy="32" r="32" fill="#0D1B2A"/>
+  <!-- "OK" text -->
+  <text x="32" y="23" text-anchor="middle" font-family="Arial, sans-serif" font-weight="800" font-size="14" fill="#E8500A" letter-spacing="1">OK</text>
+  <!-- Car silhouette -->
+  <g fill="#FFFFFF">
+    <!-- Car body top -->
+    <path d="M16 36 L20 28 L28 26 L36 26 L44 28 L48 36 Z" opacity="0.95"/>
+    <!-- Car body bottom -->
+    <rect x="14" y="36" width="36" height="8" rx="2"/>
+    <!-- Windshield -->
+    <path d="M21 29 L24 27 L32 27 L40 27 L43 29 L42 34 L22 34 Z" fill="#0D1B2A" opacity="0.6"/>
+    <!-- Wheels -->
+    <circle cx="22" cy="44" r="5" fill="#0D1B2A"/>
+    <circle cx="22" cy="44" r="3" fill="#E8500A"/>
+    <circle cx="42" cy="44" r="5" fill="#0D1B2A"/>
+    <circle cx="42" cy="44" r="3" fill="#E8500A"/>
+  </g>
+  <!-- Tagline dot -->
+  <circle cx="32" cy="56" r="2" fill="#E8500A"/>
+</svg>
