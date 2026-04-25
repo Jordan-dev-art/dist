@@ -35,16 +35,58 @@
   <link rel="icon" type="image/svg+xml" href="/assets/images/favicon.svg">
   <link rel="alternate icon" href="/assets/images/favicon.ico">
 
-  {
+ <script type="application/ld+json">
+{
   "@context": "https://schema.org",
   "@graph": [
-    "\n  <script type=\"application/ld+json\">\n  {\n    \"@context\": \"https://schema.org\",\n    \"@type\": \"AutoDealer\",\n    \"name\": \"OK Car Shipping LLC\",\n    \"description\": \"Licensed auto transport broker serving all 50 states. Open car shipping, enclosed transport, door-to-door delivery, and specialty vehicle transport.\",\n    \"url\": \"https://www.okcarshipping.com\",\n    \"telephone\": \"(405) 555-1234\",\n    \"email\": \"dispatch@okcarshipping.com\",\n    \"address\": {\n      \"@type\": \"PostalAddress\",\n      \"streetAddress\": \"1234 Main Street, Suite 100\",\n      \"addressLocality\": \"Oklahoma City\",\n      \"addressRegion\": \"OK\",\n      \"postalCode\": \"73102\",\n      \"addressCountry\": \"US\"\n    },\n    \"aggregateRating\": {\n      \"@type\": \"AggregateRating\",\n      \"ratingValue\": \"4.9\",\n      \"reviewCount\": \"1847\",\n      \"bestRating\": \"5\"\n    },\n    \"openingHoursSpecification\": [\n      {\n        \"@type\": \"OpeningHoursSpecification\",\n        \"dayOfWeek\": [\"Monday\",\"Tuesday\",\"Wednesday\",\"Thursday\",\"Friday\",\"Saturday\",\"Sunday\"],\n        \"opens\": \"08:00\",\n        \"closes\": \"20:00\"\n      }\n    ]\n  }\n  </script>",
+    {
+      "@type": "MovingCompany",
+      "@id": "https://www.okcarshipping.com/#organization",
+      "name": "OK Car Shipping LLC",
+      "description": "Licensed and insured auto transport broker serving all 50 states. Door‑to‑door open and enclosed car shipping, specialty vehicle transport, and free instant quotes.",
+      "url": "https://www.okcarshipping.com",
+      "telephone": "+1-405-555-1234",
+      "email": "dispatch@okcarshipping.com",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "1234 Main Street, Suite 100",
+        "addressLocality": "Oklahoma City",
+        "addressRegion": "OK",
+        "postalCode": "73102",
+        "addressCountry": "US"
+      },
+      "areaServed": {
+        "@type": "Country",
+        "name": "United States"
+      },
+      "serviceType": "Auto Transport",
+      "priceRange": "$$",
+      "openingHoursSpecification": {
+        "@type": "OpeningHoursSpecification",
+        "dayOfWeek": [
+          "Monday", "Tuesday", "Wednesday",
+          "Thursday", "Friday", "Saturday", "Sunday"
+        ],
+        "opens": "08:00",
+        "closes": "20:00"
+      },
+      "aggregateRating": {
+        "@type": "AggregateRating",
+        "ratingValue": "4.9",
+        "reviewCount": "1847",
+        "bestRating": "5"
+      },
+      "sameAs": [
+        "https://www.facebook.com/okcarshipping",
+        "https://www.instagram.com/okcarshipping"
+      ]
+    },
     {
       "@type": "Service",
+      "@id": "https://www.okcarshipping.com/san-diego-ca.html#service",
       "name": "Car Shipping San Diego",
       "provider": {
-        "@type": "LocalBusiness",
-        "name": "OK Car Shipping LLC"
+        "@id": "https://www.okcarshipping.com/#organization"
       },
       "areaServed": {
         "@type": "City",
@@ -54,11 +96,22 @@
           "name": "California"
         }
       },
-      "description": "Trusted car shipping in San Diego, California. Door-to-door auto transport, open & enclosed carriers, free instant quotes. Serving America's Finest City and surrounding areas.",
-      "url": "https://www.okcarshipping.com/san-diego-ca.html"
+      "serviceType": "Auto Transport",
+      "description": "Trusted car shipping in San Diego, California. Door‑to‑door open and enclosed auto transport, free instant quotes, and fully licensed service. We serve San Diego, Chula Vista, Oceanside, Escondido, Carlsbad, and all surrounding areas.",
+      "url": "https://www.okcarshipping.com/san-diego-ca.html",
+      "offers": {
+        "@type": "Offer",
+        "priceSpecification": {
+          "@type": "PriceSpecification",
+          "minPrice": "400",
+          "maxPrice": "2000",
+          "priceCurrency": "USD"
+        }
+      }
     }
   ]
 }
+</script>
 </head>
 <body>
 

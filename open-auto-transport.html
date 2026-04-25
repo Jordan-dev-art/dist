@@ -35,39 +35,92 @@
   <link rel="icon" type="image/svg+xml" href="/assets/images/favicon.svg">
   <link rel="alternate icon" href="/assets/images/favicon.ico">
 
-  {
+  <script type="application/ld+json">
+{
   "@context": "https://schema.org",
   "@graph": [
-    "\n  <script type=\"application/ld+json\">\n  {\n    \"@context\": \"https://schema.org\",\n    \"@type\": \"AutoDealer\",\n    \"name\": \"OK Car Shipping LLC\",\n    \"description\": \"Licensed auto transport broker serving all 50 states. Open car shipping, enclosed transport, door-to-door delivery, and specialty vehicle transport.\",\n    \"url\": \"https://www.okcarshipping.com\",\n    \"telephone\": \"(405) 555-1234\",\n    \"email\": \"dispatch@okcarshipping.com\",\n    \"address\": {\n      \"@type\": \"PostalAddress\",\n      \"streetAddress\": \"1234 Main Street, Suite 100\",\n      \"addressLocality\": \"Oklahoma City\",\n      \"addressRegion\": \"OK\",\n      \"postalCode\": \"73102\",\n      \"addressCountry\": \"US\"\n    },\n    \"aggregateRating\": {\n      \"@type\": \"AggregateRating\",\n      \"ratingValue\": \"4.9\",\n      \"reviewCount\": \"1847\",\n      \"bestRating\": \"5\"\n    },\n    \"openingHoursSpecification\": [\n      {\n        \"@type\": \"OpeningHoursSpecification\",\n        \"dayOfWeek\": [\"Monday\",\"Tuesday\",\"Wednesday\",\"Thursday\",\"Friday\",\"Saturday\",\"Sunday\"],\n        \"opens\": \"08:00\",\n        \"closes\": \"20:00\"\n      }\n    ]\n  }\n  </script>",
+    {
+      "@type": "MovingCompany",
+      "@id": "https://www.okcarshipping.com/#organization",
+      "name": "OK Car Shipping LLC",
+      "description": "Licensed and insured auto transport broker serving all 50 states. Door‑to‑door open and enclosed car shipping, specialty vehicle transport, and free instant quotes.",
+      "url": "https://www.okcarshipping.com",
+      "telephone": "+1-405-555-1234",
+      "email": "dispatch@okcarshipping.com",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "1234 Main Street, Suite 100",
+        "addressLocality": "Oklahoma City",
+        "addressRegion": "OK",
+        "postalCode": "73102",
+        "addressCountry": "US"
+      },
+      "areaServed": {
+        "@type": "Country",
+        "name": "United States"
+      },
+      "serviceType": "Auto Transport",
+      "priceRange": "$$",
+      "openingHoursSpecification": {
+        "@type": "OpeningHoursSpecification",
+        "dayOfWeek": [
+          "Monday", "Tuesday", "Wednesday",
+          "Thursday", "Friday", "Saturday", "Sunday"
+        ],
+        "opens": "08:00",
+        "closes": "20:00"
+      },
+      "aggregateRating": {
+        "@type": "AggregateRating",
+        "ratingValue": "4.9",
+        "reviewCount": "1847",
+        "bestRating": "5"
+      },
+      "sameAs": [
+        "https://www.facebook.com/okcarshipping",
+        "https://www.instagram.com/okcarshipping"
+      ]
+    },
     {
       "@type": "Service",
+      "@id": "https://www.okcarshipping.com/open-auto-transport.html#service",
       "name": "Open Auto Transport",
-      "description": "Our most popular and cost-effective option — your vehicle is loaded on an open multi-car carrier.",
       "provider": {
-        "@type": "LocalBusiness",
-        "name": "OK Car Shipping LLC"
+        "@id": "https://www.okcarshipping.com/#organization"
       },
-      "offers": {
-        "@type": "Offer",
-        "priceCurrency": "USD",
-        "priceRange": "$400–$900",
-        "description": "Open Auto Transport starting at $400–$900"
-      },
+      "serviceType": "Open Vehicle Transport",
+      "description": "Our most popular and cost‑effective car shipping option. Your vehicle is loaded onto an open multi‑car carrier, with door‑to‑door service nationwide. Free instant quotes — no deposit required from OK Car Shipping LLC.",
       "url": "https://www.okcarshipping.com/open-auto-transport.html",
       "areaServed": {
         "@type": "Country",
         "name": "United States"
+      },
+      "offers": {
+        "@type": "Offer",
+        "name": "Open Auto Transport",
+        "description": "Open auto transport service with free instant quote.",
+        "priceSpecification": {
+          "@type": "PriceSpecification",
+          "minPrice": "400",
+          "maxPrice": "900",
+          "priceCurrency": "USD"
+        }
       }
     },
     {
       "@type": "FAQPage",
+      "@id": "https://www.okcarshipping.com/open-auto-transport.html#faq",
+      "url": "https://www.okcarshipping.com/open-auto-transport.html",
+      "about": {
+        "@id": "https://www.okcarshipping.com/open-auto-transport.html#service"
+      },
       "mainEntity": [
         {
           "@type": "Question",
           "name": "How much does open auto transport cost?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "Open Auto Transport rates typically range $400–$900 depending on distance, vehicle size, and route. Get a free exact quote at https://www.okcarshipping.com/quote.html."
+            "text": "Open auto transport rates typically range from $400 to $900, depending on distance, vehicle size, and route popularity. Get an exact price tailored to your move with a free instant quote at https://www.okcarshipping.com/quote.html."
           }
         },
         {
@@ -75,13 +128,14 @@
           "name": "Is open auto transport available nationwide?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "Yes. OK Car Shipping LLC offers open auto transport to all 50 states via our network of 12,000+ vetted carriers."
+            "text": "Yes. OK Car Shipping LLC offers open auto transport to all 50 states through our network of over 12,000 vetted and insured carriers."
           }
         }
       ]
     }
   ]
 }
+</script>
 </head>
 <body>
 

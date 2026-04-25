@@ -35,53 +35,107 @@
   <link rel="icon" type="image/svg+xml" href="/assets/images/favicon.svg">
   <link rel="alternate icon" href="/assets/images/favicon.ico">
 
-  {
+ <script type="application/ld+json">
+{
   "@context": "https://schema.org",
   "@graph": [
-    "\n  <script type=\"application/ld+json\">\n  {\n    \"@context\": \"https://schema.org\",\n    \"@type\": \"AutoDealer\",\n    \"name\": \"OK Car Shipping LLC\",\n    \"description\": \"Licensed auto transport broker serving all 50 states. Open car shipping, enclosed transport, door-to-door delivery, and specialty vehicle transport.\",\n    \"url\": \"https://www.okcarshipping.com\",\n    \"telephone\": \"(405) 555-1234\",\n    \"email\": \"dispatch@okcarshipping.com\",\n    \"address\": {\n      \"@type\": \"PostalAddress\",\n      \"streetAddress\": \"1234 Main Street, Suite 100\",\n      \"addressLocality\": \"Oklahoma City\",\n      \"addressRegion\": \"OK\",\n      \"postalCode\": \"73102\",\n      \"addressCountry\": \"US\"\n    },\n    \"aggregateRating\": {\n      \"@type\": \"AggregateRating\",\n      \"ratingValue\": \"4.9\",\n      \"reviewCount\": \"1847\",\n      \"bestRating\": \"5\"\n    },\n    \"openingHoursSpecification\": [\n      {\n        \"@type\": \"OpeningHoursSpecification\",\n        \"dayOfWeek\": [\"Monday\",\"Tuesday\",\"Wednesday\",\"Thursday\",\"Friday\",\"Saturday\",\"Sunday\"],\n        \"opens\": \"08:00\",\n        \"closes\": \"20:00\"\n      }\n    ]\n  }\n  </script>",
+    {
+      "@type": "MovingCompany",
+      "@id": "https://www.okcarshipping.com/#organization",
+      "name": "OK Car Shipping LLC",
+      "description": "Licensed and insured auto transport broker serving all 50 states. Door‑to‑door and terminal‑to‑terminal open and enclosed car shipping, specialty vehicle transport, and free instant quotes.",
+      "url": "https://www.okcarshipping.com",
+      "telephone": "+1-405-555-1234",
+      "email": "dispatch@okcarshipping.com",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "1234 Main Street, Suite 100",
+        "addressLocality": "Oklahoma City",
+        "addressRegion": "OK",
+        "postalCode": "73102",
+        "addressCountry": "US"
+      },
+      "areaServed": {
+        "@type": "Country",
+        "name": "United States"
+      },
+      "serviceType": "Auto Transport",
+      "priceRange": "$$",
+      "openingHoursSpecification": {
+        "@type": "OpeningHoursSpecification",
+        "dayOfWeek": [
+          "Monday", "Tuesday", "Wednesday",
+          "Thursday", "Friday", "Saturday", "Sunday"
+        ],
+        "opens": "08:00",
+        "closes": "20:00"
+      },
+      "aggregateRating": {
+        "@type": "AggregateRating",
+        "ratingValue": "4.9",
+        "reviewCount": "1847",
+        "bestRating": "5"
+      },
+      "sameAs": [
+        "https://www.facebook.com/okcarshipping",
+        "https://www.instagram.com/okcarshipping"
+      ]
+    },
     {
       "@type": "Service",
-      "name": "Terminal-to-Terminal Shipping",
-      "description": "Drop your vehicle at our nearest terminal and pick it up from the destination terminal for the lowest price.",
+      "@id": "https://www.okcarshipping.com/terminal-to-terminal-shipping.html#service",
+      "name": "Terminal‑to‑Terminal Car Shipping",
       "provider": {
-        "@type": "LocalBusiness",
-        "name": "OK Car Shipping LLC"
+        "@id": "https://www.okcarshipping.com/#organization"
       },
-      "offers": {
-        "@type": "Offer",
-        "priceCurrency": "USD",
-        "priceRange": "$350–$800",
-        "description": "Terminal-to-Terminal Shipping starting at $350–$800"
-      },
+      "serviceType": "Terminal Vehicle Transport",
+      "description": "Budget‑friendly terminal‑to‑terminal car shipping. Drop your vehicle at a nearby terminal and pick it up at the destination terminal. Open and enclosed carriers available nationwide. Free instant quote — no deposit required from OK Car Shipping LLC.",
       "url": "https://www.okcarshipping.com/terminal-to-terminal-shipping.html",
       "areaServed": {
         "@type": "Country",
         "name": "United States"
+      },
+      "offers": {
+        "@type": "Offer",
+        "name": "Terminal‑to‑Terminal Shipping",
+        "description": "Low‑cost terminal drop‑off and pick‑up auto transport with a free quote.",
+        "priceSpecification": {
+          "@type": "PriceSpecification",
+          "minPrice": "350",
+          "maxPrice": "800",
+          "priceCurrency": "USD"
+        }
       }
     },
     {
       "@type": "FAQPage",
+      "@id": "https://www.okcarshipping.com/terminal-to-terminal-shipping.html#faq",
+      "url": "https://www.okcarshipping.com/terminal-to-terminal-shipping.html",
+      "about": {
+        "@id": "https://www.okcarshipping.com/terminal-to-terminal-shipping.html#service"
+      },
       "mainEntity": [
         {
           "@type": "Question",
-          "name": "How much does terminal-to-terminal shipping cost?",
+          "name": "How much does terminal‑to‑terminal car shipping cost?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "Terminal-to-Terminal Shipping rates typically range $350–$800 depending on distance, vehicle size, and route. Get a free exact quote at https://www.okcarshipping.com/quote.html."
+            "text": "Terminal‑to‑terminal car shipping typically costs between $350 and $800, depending on the route, vehicle size, and terminal locations. For an exact quote based on your nearest terminals, get a free instant quote at https://www.okcarshipping.com/quote.html."
           }
         },
         {
           "@type": "Question",
-          "name": "Is terminal-to-terminal shipping available nationwide?",
+          "name": "How does terminal‑to‑terminal shipping work?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "Yes. OK Car Shipping LLC offers terminal-to-terminal shipping to all 50 states via our network of 12,000+ vetted carriers."
+            "text": "You drop your vehicle at a designated origin terminal and collect it from the destination terminal. It’s a more economical option than door‑to‑door service. We have a nationwide network of secure terminals and can help you find the most convenient locations."
           }
         }
       ]
     }
   ]
 }
+</script>
 </head>
 <body>
 

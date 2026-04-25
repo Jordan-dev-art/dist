@@ -35,53 +35,107 @@
   <link rel="icon" type="image/svg+xml" href="/assets/images/favicon.svg">
   <link rel="alternate icon" href="/assets/images/favicon.ico">
 
-  {
+  <script type="application/ld+json">
+{
   "@context": "https://schema.org",
   "@graph": [
-    "\n  <script type=\"application/ld+json\">\n  {\n    \"@context\": \"https://schema.org\",\n    \"@type\": \"AutoDealer\",\n    \"name\": \"OK Car Shipping LLC\",\n    \"description\": \"Licensed auto transport broker serving all 50 states. Open car shipping, enclosed transport, door-to-door delivery, and specialty vehicle transport.\",\n    \"url\": \"https://www.okcarshipping.com\",\n    \"telephone\": \"(405) 555-1234\",\n    \"email\": \"dispatch@okcarshipping.com\",\n    \"address\": {\n      \"@type\": \"PostalAddress\",\n      \"streetAddress\": \"1234 Main Street, Suite 100\",\n      \"addressLocality\": \"Oklahoma City\",\n      \"addressRegion\": \"OK\",\n      \"postalCode\": \"73102\",\n      \"addressCountry\": \"US\"\n    },\n    \"aggregateRating\": {\n      \"@type\": \"AggregateRating\",\n      \"ratingValue\": \"4.9\",\n      \"reviewCount\": \"1847\",\n      \"bestRating\": \"5\"\n    },\n    \"openingHoursSpecification\": [\n      {\n        \"@type\": \"OpeningHoursSpecification\",\n        \"dayOfWeek\": [\"Monday\",\"Tuesday\",\"Wednesday\",\"Thursday\",\"Friday\",\"Saturday\",\"Sunday\"],\n        \"opens\": \"08:00\",\n        \"closes\": \"20:00\"\n      }\n    ]\n  }\n  </script>",
+    {
+      "@type": "MovingCompany",
+      "@id": "https://www.okcarshipping.com/#organization",
+      "name": "OK Car Shipping LLC",
+      "description": "Licensed and insured auto transport broker serving all 50 states plus Puerto Rico. Door‑to‑door open and enclosed car shipping, ocean freight, specialty vehicle transport, and free instant quotes.",
+      "url": "https://www.okcarshipping.com",
+      "telephone": "+1-405-555-1234",
+      "email": "dispatch@okcarshipping.com",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "1234 Main Street, Suite 100",
+        "addressLocality": "Oklahoma City",
+        "addressRegion": "OK",
+        "postalCode": "73102",
+        "addressCountry": "US"
+      },
+      "areaServed": {
+        "@type": "Country",
+        "name": "United States"
+      },
+      "serviceType": "Auto Transport",
+      "priceRange": "$$",
+      "openingHoursSpecification": {
+        "@type": "OpeningHoursSpecification",
+        "dayOfWeek": [
+          "Monday", "Tuesday", "Wednesday",
+          "Thursday", "Friday", "Saturday", "Sunday"
+        ],
+        "opens": "08:00",
+        "closes": "20:00"
+      },
+      "aggregateRating": {
+        "@type": "AggregateRating",
+        "ratingValue": "4.9",
+        "reviewCount": "1847",
+        "bestRating": "5"
+      },
+      "sameAs": [
+        "https://www.facebook.com/okcarshipping",
+        "https://www.instagram.com/okcarshipping"
+      ]
+    },
     {
       "@type": "Service",
+      "@id": "https://www.okcarshipping.com/puerto-rico-car-shipping.html#service",
       "name": "Puerto Rico Car Shipping",
-      "description": "Roll-on/Roll-off ocean freight from Jacksonville and other East Coast ports to San Juan, Puerto Rico.",
       "provider": {
-        "@type": "LocalBusiness",
-        "name": "OK Car Shipping LLC"
+        "@id": "https://www.okcarshipping.com/#organization"
       },
-      "offers": {
-        "@type": "Offer",
-        "priceCurrency": "USD",
-        "priceRange": "$1,100–$2,400",
-        "description": "Puerto Rico Car Shipping starting at $1,100–$2,400"
-      },
+      "serviceType": "Ocean Vehicle Transport",
+      "description": "Reliable Puerto Rico car shipping via roll‑on/roll‑off ocean freight from Jacksonville and other East Coast ports to San Juan, PR. Door‑to‑door, licensed & insured service. Free instant quote — no deposit required from OK Car Shipping LLC.",
       "url": "https://www.okcarshipping.com/puerto-rico-car-shipping.html",
       "areaServed": {
         "@type": "Country",
         "name": "United States"
+      },
+      "offers": {
+        "@type": "Offer",
+        "name": "Puerto Rico Car Shipping",
+        "description": "Ocean auto transport to/from Puerto Rico with a free instant quote.",
+        "priceSpecification": {
+          "@type": "PriceSpecification",
+          "minPrice": "1100",
+          "maxPrice": "2400",
+          "priceCurrency": "USD"
+        }
       }
     },
     {
       "@type": "FAQPage",
+      "@id": "https://www.okcarshipping.com/puerto-rico-car-shipping.html#faq",
+      "url": "https://www.okcarshipping.com/puerto-rico-car-shipping.html",
+      "about": {
+        "@id": "https://www.okcarshipping.com/puerto-rico-car-shipping.html#service"
+      },
       "mainEntity": [
         {
           "@type": "Question",
-          "name": "How much does puerto rico car shipping cost?",
+          "name": "How much does it cost to ship a car to Puerto Rico?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "Puerto Rico Car Shipping rates typically range $1,100–$2,400 depending on distance, vehicle size, and route. Get a free exact quote at https://www.okcarshipping.com/quote.html."
+            "text": "Puerto Rico car shipping rates typically range from $1,100 to $2,400 depending on the vehicle size, departure port, and shipping options. Get a free exact quote at https://www.okcarshipping.com/quote.html."
           }
         },
         {
           "@type": "Question",
-          "name": "Is puerto rico car shipping available nationwide?",
+          "name": "Is car shipping available to Puerto Rico?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "Yes. OK Car Shipping LLC offers puerto rico car shipping to all 50 states via our network of 12,000+ vetted carriers."
+            "text": "Yes. OK Car Shipping LLC offers car shipping to and from Puerto Rico using roll‑on/roll‑off ocean freight services from multiple East Coast ports."
           }
         }
       ]
     }
   ]
 }
+</script>
 </head>
 <body>
 

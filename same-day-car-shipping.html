@@ -35,53 +35,107 @@
   <link rel="icon" type="image/svg+xml" href="/assets/images/favicon.svg">
   <link rel="alternate icon" href="/assets/images/favicon.ico">
 
-  {
+  <script type="application/ld+json">
+{
   "@context": "https://schema.org",
   "@graph": [
-    "\n  <script type=\"application/ld+json\">\n  {\n    \"@context\": \"https://schema.org\",\n    \"@type\": \"AutoDealer\",\n    \"name\": \"OK Car Shipping LLC\",\n    \"description\": \"Licensed auto transport broker serving all 50 states. Open car shipping, enclosed transport, door-to-door delivery, and specialty vehicle transport.\",\n    \"url\": \"https://www.okcarshipping.com\",\n    \"telephone\": \"(405) 555-1234\",\n    \"email\": \"dispatch@okcarshipping.com\",\n    \"address\": {\n      \"@type\": \"PostalAddress\",\n      \"streetAddress\": \"1234 Main Street, Suite 100\",\n      \"addressLocality\": \"Oklahoma City\",\n      \"addressRegion\": \"OK\",\n      \"postalCode\": \"73102\",\n      \"addressCountry\": \"US\"\n    },\n    \"aggregateRating\": {\n      \"@type\": \"AggregateRating\",\n      \"ratingValue\": \"4.9\",\n      \"reviewCount\": \"1847\",\n      \"bestRating\": \"5\"\n    },\n    \"openingHoursSpecification\": [\n      {\n        \"@type\": \"OpeningHoursSpecification\",\n        \"dayOfWeek\": [\"Monday\",\"Tuesday\",\"Wednesday\",\"Thursday\",\"Friday\",\"Saturday\",\"Sunday\"],\n        \"opens\": \"08:00\",\n        \"closes\": \"20:00\"\n      }\n    ]\n  }\n  </script>",
+    {
+      "@type": "MovingCompany",
+      "@id": "https://www.okcarshipping.com/#organization",
+      "name": "OK Car Shipping LLC",
+      "description": "Licensed and insured auto transport broker serving all 50 states. Door‑to‑door open, enclosed, expedited, and same‑day car shipping with free instant quotes — no deposit required.",
+      "url": "https://www.okcarshipping.com",
+      "telephone": "+1-405-555-1234",
+      "email": "dispatch@okcarshipping.com",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "1234 Main Street, Suite 100",
+        "addressLocality": "Oklahoma City",
+        "addressRegion": "OK",
+        "postalCode": "73102",
+        "addressCountry": "US"
+      },
+      "areaServed": {
+        "@type": "Country",
+        "name": "United States"
+      },
+      "serviceType": "Auto Transport",
+      "priceRange": "$$",
+      "openingHoursSpecification": {
+        "@type": "OpeningHoursSpecification",
+        "dayOfWeek": [
+          "Monday", "Tuesday", "Wednesday",
+          "Thursday", "Friday", "Saturday", "Sunday"
+        ],
+        "opens": "08:00",
+        "closes": "20:00"
+      },
+      "aggregateRating": {
+        "@type": "AggregateRating",
+        "ratingValue": "4.9",
+        "reviewCount": "1847",
+        "bestRating": "5"
+      },
+      "sameAs": [
+        "https://www.facebook.com/okcarshipping",
+        "https://www.instagram.com/okcarshipping"
+      ]
+    },
     {
       "@type": "Service",
+      "@id": "https://www.okcarshipping.com/same-day-car-shipping.html#service",
       "name": "Same-Day Car Shipping",
-      "description": "When timing is critical, our same-day dispatch service gets a driver to your vehicle within hours.",
       "provider": {
-        "@type": "LocalBusiness",
-        "name": "OK Car Shipping LLC"
+        "@id": "https://www.okcarshipping.com/#organization"
       },
-      "offers": {
-        "@type": "Offer",
-        "priceCurrency": "USD",
-        "priceRange": "$800–$2,000",
-        "description": "Same-Day Car Shipping starting at $800–$2,000"
-      },
+      "serviceType": "Expedited Vehicle Transport",
+      "description": "Nationwide same‑day car shipping and expedited auto transport. When timing is critical, our dispatchers arrange a driver within hours for door‑to‑door delivery anywhere in the US. Free instant quote — no deposit required from OK Car Shipping LLC.",
       "url": "https://www.okcarshipping.com/same-day-car-shipping.html",
       "areaServed": {
         "@type": "Country",
         "name": "United States"
+      },
+      "offers": {
+        "@type": "Offer",
+        "name": "Same-Day Vehicle Shipping",
+        "description": "Expedited same-day auto transport with rapid dispatch and free instant quote.",
+        "priceSpecification": {
+          "@type": "PriceSpecification",
+          "minPrice": "800",
+          "maxPrice": "2000",
+          "priceCurrency": "USD"
+        }
       }
     },
     {
       "@type": "FAQPage",
+      "@id": "https://www.okcarshipping.com/same-day-car-shipping.html#faq",
+      "url": "https://www.okcarshipping.com/same-day-car-shipping.html",
+      "about": {
+        "@id": "https://www.okcarshipping.com/same-day-car-shipping.html#service"
+      },
       "mainEntity": [
         {
           "@type": "Question",
-          "name": "How much does same-day car shipping cost?",
+          "name": "How much does same‑day car shipping cost?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "Same-Day Car Shipping rates typically range $800–$2,000 depending on distance, vehicle size, and route. Get a free exact quote at https://www.okcarshipping.com/quote.html."
+            "text": "Same‑day and expedited car shipping typically costs between $800 and $2,000, depending on the route, distance, vehicle size, and dispatch urgency. For an exact price in real time, get a free instant quote at https://www.okcarshipping.com/quote.html."
           }
         },
         {
           "@type": "Question",
-          "name": "Is same-day car shipping available nationwide?",
+          "name": "How fast can you dispatch a driver for same‑day shipping?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "Yes. OK Car Shipping LLC offers same-day car shipping to all 50 states via our network of 12,000+ vetted carriers."
+            "text": "We can often assign a driver within 2–6 hours of booking, thanks to our network of over 12,000 vetted carriers nationwide. Pickup is typically same‑day or next morning depending on availability and location."
           }
         }
       ]
     }
   ]
 }
+</script>
 </head>
 <body>
 

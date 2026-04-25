@@ -35,53 +35,107 @@
   <link rel="icon" type="image/svg+xml" href="/assets/images/favicon.svg">
   <link rel="alternate icon" href="/assets/images/favicon.ico">
 
-  {
+ <script type="application/ld+json">
+{
   "@context": "https://schema.org",
   "@graph": [
-    "\n  <script type=\"application/ld+json\">\n  {\n    \"@context\": \"https://schema.org\",\n    \"@type\": \"AutoDealer\",\n    \"name\": \"OK Car Shipping LLC\",\n    \"description\": \"Licensed auto transport broker serving all 50 states. Open car shipping, enclosed transport, door-to-door delivery, and specialty vehicle transport.\",\n    \"url\": \"https://www.okcarshipping.com\",\n    \"telephone\": \"(405) 555-1234\",\n    \"email\": \"dispatch@okcarshipping.com\",\n    \"address\": {\n      \"@type\": \"PostalAddress\",\n      \"streetAddress\": \"1234 Main Street, Suite 100\",\n      \"addressLocality\": \"Oklahoma City\",\n      \"addressRegion\": \"OK\",\n      \"postalCode\": \"73102\",\n      \"addressCountry\": \"US\"\n    },\n    \"aggregateRating\": {\n      \"@type\": \"AggregateRating\",\n      \"ratingValue\": \"4.9\",\n      \"reviewCount\": \"1847\",\n      \"bestRating\": \"5\"\n    },\n    \"openingHoursSpecification\": [\n      {\n        \"@type\": \"OpeningHoursSpecification\",\n        \"dayOfWeek\": [\"Monday\",\"Tuesday\",\"Wednesday\",\"Thursday\",\"Friday\",\"Saturday\",\"Sunday\"],\n        \"opens\": \"08:00\",\n        \"closes\": \"20:00\"\n      }\n    ]\n  }\n  </script>",
+    {
+      "@type": "MovingCompany",
+      "@id": "https://www.okcarshipping.com/#organization",
+      "name": "OK Car Shipping LLC",
+      "description": "Licensed and insured auto transport broker serving all 50 states. Door‑to‑door open and enclosed car shipping, snowbird seasonal transport, specialty vehicle hauling, and free instant quotes.",
+      "url": "https://www.okcarshipping.com",
+      "telephone": "+1-405-555-1234",
+      "email": "dispatch@okcarshipping.com",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "1234 Main Street, Suite 100",
+        "addressLocality": "Oklahoma City",
+        "addressRegion": "OK",
+        "postalCode": "73102",
+        "addressCountry": "US"
+      },
+      "areaServed": {
+        "@type": "Country",
+        "name": "United States"
+      },
+      "serviceType": "Auto Transport",
+      "priceRange": "$$",
+      "openingHoursSpecification": {
+        "@type": "OpeningHoursSpecification",
+        "dayOfWeek": [
+          "Monday", "Tuesday", "Wednesday",
+          "Thursday", "Friday", "Saturday", "Sunday"
+        ],
+        "opens": "08:00",
+        "closes": "20:00"
+      },
+      "aggregateRating": {
+        "@type": "AggregateRating",
+        "ratingValue": "4.9",
+        "reviewCount": "1847",
+        "bestRating": "5"
+      },
+      "sameAs": [
+        "https://www.facebook.com/okcarshipping",
+        "https://www.instagram.com/okcarshipping"
+      ]
+    },
     {
       "@type": "Service",
+      "@id": "https://www.okcarshipping.com/snowbird-car-shipping.html#service",
       "name": "Snowbird Car Shipping",
-      "description": "Convenient fall/spring shipping schedules for snowbirds traveling between northern states and warm-weather destinations.",
       "provider": {
-        "@type": "LocalBusiness",
-        "name": "OK Car Shipping LLC"
+        "@id": "https://www.okcarshipping.com/#organization"
       },
-      "offers": {
-        "@type": "Offer",
-        "priceCurrency": "USD",
-        "priceRange": "$450–$1,100",
-        "description": "Snowbird Car Shipping starting at $450–$1,100"
-      },
+      "serviceType": "Seasonal Vehicle Transport",
+      "description": "Stress‑free snowbird car shipping with convenient fall and spring schedules. We transport your vehicle between northern states and warm‑weather destinations like Florida, Arizona, and Texas. Door‑to‑door open and enclosed carriers, free instant quote — no deposit required from OK Car Shipping LLC.",
       "url": "https://www.okcarshipping.com/snowbird-car-shipping.html",
       "areaServed": {
         "@type": "Country",
         "name": "United States"
+      },
+      "offers": {
+        "@type": "Offer",
+        "name": "Snowbird Car Shipping",
+        "description": "Seasonal snowbird auto transport with flexible scheduling and free quote.",
+        "priceSpecification": {
+          "@type": "PriceSpecification",
+          "minPrice": "450",
+          "maxPrice": "1100",
+          "priceCurrency": "USD"
+        }
       }
     },
     {
       "@type": "FAQPage",
+      "@id": "https://www.okcarshipping.com/snowbird-car-shipping.html#faq",
+      "url": "https://www.okcarshipping.com/snowbird-car-shipping.html",
+      "about": {
+        "@id": "https://www.okcarshipping.com/snowbird-car-shipping.html#service"
+      },
       "mainEntity": [
         {
           "@type": "Question",
           "name": "How much does snowbird car shipping cost?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "Snowbird Car Shipping rates typically range $450–$1,100 depending on distance, vehicle size, and route. Get a free exact quote at https://www.okcarshipping.com/quote.html."
+            "text": "Snowbird car shipping rates typically range from $450 to $1,100, depending on the route, vehicle size, and season. For an exact price for your snowbird move, get a free instant quote at https://www.okcarshipping.com/quote.html."
           }
         },
         {
           "@type": "Question",
-          "name": "Is snowbird car shipping available nationwide?",
+          "name": "How early should I book my snowbird car shipping?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "Yes. OK Car Shipping LLC offers snowbird car shipping to all 50 states via our network of 12,000+ vetted carriers."
+            "text": "We recommend booking 2–4 weeks ahead of your desired pickup date, especially during peak fall (October–November) and spring (March–April) seasons, to secure the best rates and availability from our network of 12,000+ vetted carriers."
           }
         }
       ]
     }
   ]
 }
+</script>
 </head>
 <body>
 
